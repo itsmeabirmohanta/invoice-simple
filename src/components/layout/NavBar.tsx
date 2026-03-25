@@ -72,34 +72,30 @@ const NavBar: React.FC = () => {
   }
 
   return (
-    <nav className={`fixed w-full z-10 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white/90 backdrop-blur-lg shadow-md'
-        : 'bg-white'
-    }`}>
+    <nav className="fixed w-full z-10 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded bg-blue-600 text-white">
+            <div className="flex items-center justify-center w-8 h-8 rounded-sm bg-black text-white">
               <FileText size={18} />
             </div>
-            <span className="font-semibold text-xl tracking-tight">
+            <span className="font-semibold text-lg tracking-tight">
               InvoiceSimple
             </span>
           </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-6">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-1 ${
+                  className={`px-3 py-2 text-sm font-medium flex items-center space-x-1 ${
                     isActive(item.path) 
-                      ? 'bg-gray-100 text-blue-600' 
-                      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                      ? 'text-black border-b-2 border-black' 
+                      : 'text-gray-600 hover:text-black'
                   }`}
                 >
                   {item.icon}
@@ -109,7 +105,7 @@ const NavBar: React.FC = () => {
               
               <button 
                 onClick={handleNewInvoice}
-                className="px-3 py-2 rounded-md bg-blue-600 text-white text-sm font-medium flex items-center space-x-1 hover:bg-blue-700 transition-colors"
+                className="px-4 py-2 rounded bg-black text-white text-sm font-medium flex items-center space-x-1 hover:opacity-70 transition-opacity"
               >
                 <Plus size={18} />
                 <span>New Invoice</span>
@@ -121,7 +117,7 @@ const NavBar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-gray-500 hover:text-gray-800 focus:outline-none"
+              className="p-2 rounded text-gray-600 hover:text-black focus:outline-none"
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -131,16 +127,16 @@ const NavBar: React.FC = () => {
       
       {/* Mobile menu */}
       <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} transition-all duration-300`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
           {navItems.map((item) => (
             <Link
               key={item.path}
               href={item.path}
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium flex items-center space-x-2 ${
+              className={`px-3 py-2 rounded text-base font-medium flex items-center space-x-2 ${
                 isActive(item.path)
-                  ? 'bg-gray-100 text-blue-600'
-                  : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                  ? 'bg-black text-white'
+                  : 'text-gray-600 hover:bg-gray-100 hover:text-black'
               }`}
             >
               {item.icon}
@@ -153,7 +149,7 @@ const NavBar: React.FC = () => {
               handleNewInvoice();
               setMobileMenuOpen(false);
             }}
-            className="w-full px-3 py-2 rounded-md bg-blue-600 text-white text-base font-medium flex items-center space-x-2 hover:bg-blue-700 transition-colors"
+            className="w-full px-3 py-2 rounded bg-black text-white text-base font-medium flex items-center space-x-2 hover:opacity-70 transition-opacity"
           >
             <Plus size={18} />
             <span>New Invoice</span>

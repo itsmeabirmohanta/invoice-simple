@@ -1,0 +1,19 @@
+[build]
+  # The build command to run
+  command = "npm run build"
+  # The directory where the built assets are placed
+  publish = "dist"
+
+# Single Page Application (SPA) routing configuration
+# This ensures that all paths are routed to index.html
+# so React Router can handle them via client-side routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Better caching for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

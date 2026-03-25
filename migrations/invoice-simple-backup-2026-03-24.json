@@ -1,0 +1,886 @@
+{
+  "invoices": [
+    {
+      "id": "6761faf4-fb94-48f9-905c-c1510e588230",
+      "number": "INV0004",
+      "date": "2025-06-24",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "9f084fdc-bc67-4f35-9b69-51a00ee9cfa3",
+          "description": "Graphic Design Service For The Month Of July",
+          "rate": 25000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "3e93bec3-c06d-4cd0-89b8-13b33e587ba0",
+      "number": "INV0005",
+      "date": "2025-07-24",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "128e055e-ba18-45e7-9eb3-624c0c02bfc8",
+          "description": "Graphic Design Service For The Month Of July",
+          "rate": 25000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "9fd9decb-b75d-4306-92bc-37c9d28b037b",
+      "number": "INV0006",
+      "date": "2025-08-25",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "6f46f06a-3293-4c17-beb2-f665ba19c836",
+          "description": "Graphic Design Service For The Month Of Aug",
+          "rate": 25000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "a2755961-7c82-4045-a4d0-93eb744704db",
+      "number": "INVM0004",
+      "date": "2025-08-27",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Lovely Professional University , Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411 Lovely Professional University Jalandhar Delhi Grand Trunk Rd Phagwara Punjab 144411india",
+          "street2": "",
+          "city": "Phagwara",
+          "state": "",
+          "zip": "144411"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "Abesh Creations",
+        "email": "abeshcreations@gmail.com",
+        "address": {
+          "street1": "Puranpara Primary School, Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "8918808282"
+      },
+      "items": [
+        {
+          "id": "ca4ce9a4-06fd-4e8b-8693-3159d9a88144",
+          "description": "Saree Payment",
+          "rate": 41850,
+          "qty": 1
+        },
+        {
+          "id": "18b0bc98-62ac-4030-a6fa-c9fecea10782",
+          "description": "Saree Payment 2",
+          "rate": 39999,
+          "qty": 1
+        },
+        {
+          "id": "890b278f-cb0b-4d29-a4ef-d2482a165b8a",
+          "description": "CO - ORD Set",
+          "rate": 3500,
+          "qty": 1
+        },
+        {
+          "id": "21d32b48-c609-4b4d-a599-d01b66fa157d",
+          "description": "Sticker Paper",
+          "rate": 340,
+          "qty": 1
+        },
+        {
+          "id": "a648efc1-ba7d-4341-a25e-5dc6e2588fde",
+          "description": "Bill Paper",
+          "rate": 250,
+          "qty": 1
+        },
+        {
+          "id": "ac5d3431-6c23-497c-a54f-9a3145f7092a",
+          "description": "Mohuas Fashion",
+          "rate": 5280,
+          "qty": 1
+        },
+        {
+          "id": "6f815999-8b4f-4f41-aeae-2c9e58777d86",
+          "description": "Avanee Creations",
+          "rate": 24923,
+          "qty": 1
+        },
+        {
+          "id": "65bea051-f33d-4117-8e55-9cd8a2fdc3ea",
+          "description": "Paid Back ( 3rd Sep )",
+          "rate": -20000,
+          "qty": 1
+        },
+        {
+          "id": "f6fb7332-e093-4777-921a-cc7bc4bde4a5",
+          "description": "Maa",
+          "rate": -3700,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025
+    },
+    {
+      "id": "69272320-6455-4536-b12c-00451981fb55",
+      "number": "INV0007",
+      "date": "2025-09-20",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "2bdb1408-569e-477e-a01e-ca1902010327",
+          "description": "Graphic Design Service For The Month Of September",
+          "rate": 25000,
+          "qty": 1
+        },
+        {
+          "id": "1db24284-91dd-4498-8236-62acedf8e7f3",
+          "description": "Website Development & Management Yashoda Ai - Quiz",
+          "rate": 10000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "ab2f91e2-b0f1-4c76-a00b-625df0dbfc97",
+      "number": "INV0008",
+      "date": "2025-10-26",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "0d39a514-4206-4fa2-b13f-5284044b2520",
+          "description": "Graphic Design Service For The Month Of September",
+          "rate": 32000,
+          "qty": 1
+        },
+        {
+          "id": "6669aeb1-de29-498f-8410-1a55e6467339",
+          "description": "Website Development & Management Yashoda Ai - Quiz",
+          "rate": 10000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "7248514a-09bc-43e7-8e1e-2e0da3bc9d55",
+      "number": "INV0009",
+      "date": "2025-11-27",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "fdb6c202-2cd1-4ce7-9598-f1e1e7f7fca6",
+          "description": "Graphic Design Service For The Month Of October",
+          "rate": 32000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "29f58eb3-0654-4a5a-a891-bb351a028f91",
+      "number": "INV02",
+      "date": "2025-11-29",
+      "terms": "On Receipt",
+      "from": {
+        "name": "REDDIX TECH ENTERPRISES",
+        "email": "reddix.lpu@gmail.com",
+        "address": {
+          "street1": "Lovely Professional University , Jalandhar - Delhi, Grand Trunk Rd",
+          "street2": "",
+          "city": "Phagwara",
+          "state": "",
+          "zip": "144411"
+        },
+        "phone": "8145553999",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Flood, Sector 26",
+          "street2": "",
+          "city": "Chandigarh || TXN : AFKPN5425P",
+          "state": "",
+          "zip": ""
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "962fd4ad-1d7b-41d2-83a6-b98f50346874",
+          "description": "Cab Service From Amritsar Airport To LPU",
+          "rate": 3000,
+          "qty": 1
+        },
+        {
+          "id": "bb018ce7-7eb3-4991-830d-38bd72081b91",
+          "description": "Cab Service From LPU To Amritsar Airport",
+          "rate": 3000,
+          "qty": 1
+        },
+        {
+          "id": "732b79e9-a094-44ce-a699-aab1611b2d00",
+          "description": "Boquete for Lakshmi Pillai Maam",
+          "rate": 400,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025
+    },
+    {
+      "id": "10fe3854-d9f5-450a-9aa3-2ef00adc4b0e",
+      "number": "INV01",
+      "date": "2025-12-02",
+      "terms": "On Receipt",
+      "from": {
+        "name": "REDDIX TECH ENTERPRISES",
+        "email": "reddix.lpu@gmail.com",
+        "address": {
+          "street1": "Lovely Professional University , Jalandhar - Delhi, Grand Trunk Rd",
+          "street2": "",
+          "city": "Phagwara",
+          "state": "",
+          "zip": "144411"
+        },
+        "phone": "8145553999",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh || Txn : AFKPN5425P",
+          "state": "",
+          "zip": ""
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "0cb923b0-560f-4ae9-8d43-55767645b859",
+          "description": "10 x 8 Flex Banner",
+          "rate": 600,
+          "qty": 2
+        },
+        {
+          "id": "55b344f8-2bd4-4804-8d98-403d25e1e19b",
+          "description": "6 x 2.5 Flex Banner",
+          "rate": 400,
+          "qty": 1
+        },
+        {
+          "id": "4d52132c-317f-4d05-9a7a-25e9a3f96770",
+          "description": "A4 Colour ID",
+          "rate": 10,
+          "qty": 70
+        },
+        {
+          "id": "338df907-e6ca-4c1d-82f8-696e811ccffd",
+          "description": "A4 Glossy ID",
+          "rate": 30,
+          "qty": 10
+        },
+        {
+          "id": "1d806d3b-2f20-4498-8f78-984eb8604199",
+          "description": "A5 ID Card Holder",
+          "rate": 5,
+          "qty": 350
+        },
+        {
+          "id": "b09933b3-cd4b-4348-81a0-2461b030b4ba",
+          "description": "Normal Blue Lanyard",
+          "rate": 2,
+          "qty": 350
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025
+    },
+    {
+      "id": "7b48a838-29b8-4fa3-a5c7-55d3d7a7dc18",
+      "number": "INV03",
+      "date": "2025-12-05",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Lovely Professional University , Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411 Lovely Professional University Jalandhar Delhi Grand Trunk Rd Phagwara Punjab 144411india",
+          "street2": "",
+          "city": "Phagwara",
+          "state": "",
+          "zip": "144411"
+        },
+        "phone": "9002328222",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh || Txn : AFKPN5425P",
+          "state": "",
+          "zip": ""
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "e825c9bf-b294-423b-b73d-d3c11a68dc5d",
+          "description": "LPU To Phagwara Station",
+          "rate": 300,
+          "qty": 1
+        },
+        {
+          "id": "7616e593-de6c-449f-b106-5f4a5a0c5eaf",
+          "description": "Amritsar Station To GNDU",
+          "rate": 200,
+          "qty": 1
+        },
+        {
+          "id": "978c66a4-4b6b-4f32-8a52-644875bb5a86",
+          "description": "GNDU To Amritsar Station",
+          "rate": 200,
+          "qty": 1
+        },
+        {
+          "id": "8740bd8d-a36c-49de-b8d6-8ad13d7f98bf",
+          "description": "Phagwara Station To LPU",
+          "rate": 300,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "6b425794-1013-480a-bb55-5979d2eaef9d",
+      "number": "INV0010",
+      "date": "2025-12-24",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "c11a9a62-6fef-4f13-8ad2-6d8c43a7339a",
+          "description": "Graphic Design Service For The Month Of November",
+          "rate": 32000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2025,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "7d22d4c5-b10d-442e-b4a6-e7aebfa20ae3",
+      "number": "INV0011",
+      "date": "2026-01-31",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "9b095893-49d2-4206-bbbf-48ef43a060d5",
+          "description": "Graphic Design Service For The Month Of December",
+          "rate": 32000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2026,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "cacbcb3f-7e7a-49c6-9a23-4902db04d141",
+      "number": "INV0012",
+      "date": "2026-02-24",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "172d92ac-3759-44f4-a07d-2006de711213",
+          "description": "Graphic Design Service For The Month Of February",
+          "rate": 32000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2026,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    },
+    {
+      "id": "063b564a-ce66-4aea-8dab-ce279516dc2f",
+      "number": "INVM0014",
+      "date": "2026-02-24",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abesh Creations",
+        "email": "",
+        "address": {
+          "street1": "Puranpara Primary School, Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "8918808282",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "Aatharv Taralkar",
+        "email": "aatharvtaralkar08@gmail.com",
+        "address": {
+          "street1": "Pramod Madhukar Tarankar Panchayat Samiti Kagal",
+          "street2": "",
+          "city": "Kolhapur ",
+          "state": "",
+          "zip": "426126"
+        },
+        "phone": "8788844265"
+      },
+      "items": [
+        {
+          "id": "172d92ac-3759-44f4-a07d-2006de711213",
+          "description": "Semi Ghicha Saree ( Beige )",
+          "rate": 1190,
+          "qty": 1
+        },
+        {
+          "id": "957c32d9-2b05-41b3-b82f-18b2fc34f990",
+          "description": "Applique Saree ( White )",
+          "rate": 890,
+          "qty": 1
+        },
+        {
+          "id": "bb42bc40-f49a-4648-a64c-99d624fc2caf",
+          "description": "Express Delivery",
+          "rate": 323,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "paid",
+      "year": 2026
+    },
+    {
+      "id": "a397682f-2462-4677-a8b5-e2525146c7ff",
+      "number": "INV0013",
+      "date": "2026-03-24",
+      "terms": "On Receipt",
+      "from": {
+        "name": "Abir Mahanta",
+        "email": "abirmediagroup@gmail.com",
+        "address": {
+          "street1": "Puranpara",
+          "street2": "",
+          "city": "Gangarampur",
+          "state": "",
+          "zip": "733124"
+        },
+        "phone": "",
+        "businessNumber": ""
+      },
+      "to": {
+        "name": "The Ideaz Factory",
+        "email": "accounts@theideazfactory.com",
+        "address": {
+          "street1": "SCO 34, Second Floor, Sector 26",
+          "street2": "",
+          "city": "Chandigarh",
+          "state": "",
+          "zip": "160019"
+        },
+        "phone": ""
+      },
+      "items": [
+        {
+          "id": "fa195dd4-3196-4efc-b2b6-568f622ea03a",
+          "description": "Graphic Design Service For The Month Of March",
+          "rate": 32000,
+          "qty": 1
+        }
+      ],
+      "currency": "INR",
+      "tax": {
+        "type": "None",
+        "rate": 0
+      },
+      "discount": {
+        "type": "None"
+      },
+      "status": "outstanding",
+      "year": 2026,
+      "notes": "Bank Details\nA/C No.: 42780784163\nCIF : 91435238943\nBranch : 09401\nIFSC : SBIN0009401"
+    }
+  ],
+  "settings": {
+    "templateColor": "default",
+    "requestReviews": false
+  }
+}
