@@ -1,5 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useSearchParams } from "react-router-dom";
+import { toast } from "sonner";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,6 +21,32 @@ import "./App.css";
 
 const queryClient = new QueryClient();
 
+function GlobalErrorToast() {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  useEffect(() => {
+    const error = searchParams.get("error");
+    if (error) {
+      if (error === "email_not_found") {
+        toast.error("GitHub Login Failed", {
+          description: "Could not retrieve your email. Please ensure your GitHub email is publicly accessible or use another sign-in method.",
+          duration: 8000,
+        });
+      } else {
+        toast.error("Authentication Error", {
+          description: error.replace(/_/g, " "),
+        });
+      }
+      
+      // Remove the error parameter from the URL to avoid repeating the toast
+      searchParams.delete("error");
+      setSearchParams(searchParams, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
+
+  return null;
+}
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -26,6 +54,7 @@ const App = () => (
       <Sonner />
       <AuthProvider>
         <BrowserRouter>
+          <GlobalErrorToast />
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-1 w-full">
