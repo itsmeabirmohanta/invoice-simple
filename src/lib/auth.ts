@@ -1,4 +1,5 @@
 import { createAuthClient } from 'better-auth/client';
+import { emailOTPClient } from 'better-auth/client/plugins';
 
 const authUrl = import.meta.env.VITE_NEON_AUTH_URL;
 
@@ -13,6 +14,7 @@ export const authClient = createAuthClient({
   fetchOptions: {
     credentials: 'include',
   },
+  plugins: [emailOTPClient()],
 });
 
 // Export auth methods for signup, signin, signout

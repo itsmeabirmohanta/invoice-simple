@@ -68,12 +68,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           console.log('No active session:', error.message ?? error);
           setUser(null);
         } else if (session?.user) {
-          const userData = toUser(session.user);
-          setUser(userData);
-          // Signal that we have an active session — the API client will
-          // fetch a real JWT from the /token endpoint on its next request.
-          apiClient.setAuthToken();
-          console.log('Session found:', userData);
+          if (session.user.emailVerified === false) {
+            console.log('Unverified session detected on load, ignoring.');
+            // Strictly require verification to let them act as a user.
+            setUser(null);
+            // Optionally authClient.signOut(); to kill it on server.
+          } else {
+            const userData = toUser(session.user);
+            setUser(userData);
+            // Signal that we have an active session — the API client will
+            // fetch a real JWT from the /token endpoint on its next request.
+            apiClient.setAuthToken();
+            console.log('Session found:', userData);
+          }
         } else {
           setUser(null);
         }
@@ -104,6 +111,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       if (response.data?.user) {
+        if (response.data.user.emailVerified === false) {
+          // Force error if user is returned but not verified
+          throw Object.assign(new Error('email_not_verified'), { code: 'email_not_verified' });
+        }
         const userData = toUser(response.data.user);
         setUser(userData);
         // Invalidate JWT cache so next API call fetches a fresh JWT
@@ -112,7 +123,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       } else {
         // Fallback: fetch session via the SDK
         const { data: session } = await authClient.getSession();
-        if (session?.user) {
+        if (session?.user && session.user.emailVerified !== false) {
           const userData = toUser(session.user);
           setUser(userData);
           console.log('User set from session (post-login):', userData);
@@ -141,6 +152,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       if (response.data?.user) {
+        if (response.data.user.emailVerified === false) {
+          console.log('User signed up but verification pending. Not setting session.');
+          return;
+        }
         const userData = toUser(response.data.user);
         setUser(userData);
         // Invalidate JWT cache so next API call fetches a fresh JWT
@@ -149,7 +164,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       } else {
         // Fallback: fetch session via the SDK
         const { data: session } = await authClient.getSession();
-        if (session?.user) {
+        if (session?.user && session.user.emailVerified !== false) {
           const userData = toUser(session.user);
           setUser(userData);
           console.log('User set from session (post-signup):', userData);
