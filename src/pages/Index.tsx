@@ -335,45 +335,47 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-            <div className="relative flex-1 max-w-sm">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full">
+            <div className="relative w-full sm:flex-1 sm:max-w-sm">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
               <Input
                 placeholder="Search by invoice #, client, or sender..."
-                className="pl-9 border-gray-300 focus:border-blue-500"
+                className="pl-9 border-gray-300 focus:border-blue-500 w-full"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
             </div>
-            <Button variant="outline" size="sm" onClick={loadInvoices} className="border-gray-300 hover:bg-gray-100">
-              ↻ Refresh
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => fileInputRef.current?.click()}
-              className="border-blue-300 hover:bg-blue-50 text-blue-600"
-            >
-              <Upload className="h-4 w-4 mr-1" /> Import
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleExportAll}
-              disabled={invoices.length === 0}
-              className="border-gray-300 hover:bg-gray-100"
-            >
-              <Download className="h-4 w-4 mr-1" /> Export All
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleExportFiltered}
-              disabled={filtered.length === 0}
-              className="border-gray-300 hover:bg-gray-100"
-            >
-              <Settings className="h-4 w-4 mr-1" /> Export View
-            </Button>
+            <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+              <Button variant="outline" size="sm" onClick={loadInvoices} className="border-gray-300 hover:bg-gray-100 flex-1 sm:flex-none">
+                ↻ Refresh
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => fileInputRef.current?.click()}
+                className="border-blue-300 hover:bg-blue-50 text-blue-600 flex-1 sm:flex-none"
+              >
+                <Upload className="h-4 w-4 mr-1" /> Import
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleExportAll}
+                disabled={invoices.length === 0}
+                className="border-gray-300 hover:bg-gray-100 flex-1 sm:flex-none"
+              >
+                <Download className="h-4 w-4 mr-1" /> Export All
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleExportFiltered}
+                disabled={filtered.length === 0}
+                className="border-gray-300 hover:bg-gray-100 flex-1 sm:flex-none"
+              >
+                <Settings className="h-4 w-4 mr-1" /> Export View
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -501,16 +503,16 @@ const Index = () => {
                   {/* Status Indicator Bar */}
                   <div className={`absolute left-0 top-0 bottom-0 w-1.5 transition-colors ${paymentStatus === 'paid' ? 'bg-emerald-500' : 'bg-amber-500'}`} />
                   
-                  <div className="p-5 flex flex-col md:flex-row items-start md:items-center gap-6 pl-7">
+                  <div className="p-5 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 pl-7">
                     
                     {/* Left: Identity & Basic Info */}
-                    <div className="flex items-center gap-4 flex-1">
+                    <div className="flex items-start md:items-center gap-4 flex-1 w-full">
                       <div className={`h-12 w-12 rounded-xl flex items-center justify-center shrink-0 shadow-sm transition-colors ${paymentStatus === 'paid' ? 'bg-emerald-100 text-emerald-600' : 'bg-amber-100 text-amber-600'}`}>
                         <FileText className="h-6 w-6" />
                       </div>
-                      <div>
-                        <div className="flex items-center gap-2 mb-1">
-                          <h3 className="font-bold text-gray-900 text-lg tracking-tight">{invoice.invoice_number}</h3>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2 mb-1">
+                          <h3 className="font-bold text-gray-900 text-lg tracking-tight truncate max-w-full">{invoice.invoice_number}</h3>
                           <Badge variant="outline" className={`font-medium shadow-sm ${paymentStatusColors[paymentStatus]}`}>
                             {paymentStatus.charAt(0).toUpperCase() + paymentStatus.slice(1)}
                           </Badge>
@@ -527,7 +529,7 @@ const Index = () => {
                     </div>
 
                     {/* Middle: Amount & Dates */}
-                    <div className="flex-1 flex flex-col md:items-center min-w-[200px]">
+                    <div className="flex-1 flex flex-col items-start md:items-center min-w-[200px] w-full mt-2 md:mt-0">
                       <div className="text-left md:text-center">
                         <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Total Amount</p>
                         <p className="text-2xl font-bold tracking-tight text-gray-900">{formatINR(total)}</p>
@@ -536,7 +538,7 @@ const Index = () => {
                     </div>
 
                     {/* Right: Quick Actions */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex flex-wrap items-center gap-3 w-full md:w-auto mt-4 md:mt-0 justify-between md:justify-end border-t border-gray-100 md:border-none pt-4 md:pt-0">
                       <div className="flex items-center gap-2">
                         {paymentStatus !== 'paid' && (
                           <Button

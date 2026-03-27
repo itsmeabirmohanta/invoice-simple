@@ -264,9 +264,9 @@ const CreateInvoice = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6 p-6 max-w-[1400px] mx-auto">
+      <div className="flex flex-col lg:flex-row gap-6 p-4 sm:p-6 max-w-[1400px] mx-auto">
         {/* Form */}
-        <div className="lg:w-[480px] shrink-0 space-y-6">
+        <div className="w-full lg:w-[480px] shrink-0 space-y-6">
           {/* Invoice Details */}
           <section className="bg-background rounded-lg border p-5 space-y-4">
             <h2 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">Invoice Details</h2>
@@ -318,9 +318,9 @@ const CreateInvoice = () => {
           <section className="bg-background rounded-lg border p-5 space-y-3">
             <h2 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">Line Items</h2>
             {invoice.lineItems.map((item, idx) => (
-              <div key={item.id} className="space-y-2 pb-3 border-b border-dashed last:border-0 last:pb-0">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-muted-foreground w-5">{idx + 1}.</span>
+              <div key={item.id} className="space-y-3 pb-4 border-b border-dashed last:border-0 last:pb-0">
+                <div className="flex items-start sm:items-center gap-2">
+                  <span className="text-xs text-muted-foreground w-4 sm:w-5 pt-2.5 sm:pt-0">{idx + 1}.</span>
                   <Input
                     placeholder="Description"
                     className="flex-1"
@@ -328,13 +328,13 @@ const CreateInvoice = () => {
                     onChange={(e) => updateLineItem(item.id, { description: e.target.value })}
                   />
                   {invoice.lineItems.length > 1 && (
-                    <Button variant="ghost" size="icon" className="h-8 w-8 shrink-0" onClick={() => removeLineItem(item.id)}>
-                      <Trash2 className="h-3.5 w-3.5 text-destructive" />
+                    <Button variant="ghost" size="icon" className="h-10 w-10 shrink-0" onClick={() => removeLineItem(item.id)}>
+                      <Trash2 className="h-4 w-4 text-destructive" />
                     </Button>
                   )}
                 </div>
-                <div className="flex gap-2 ml-7">
-                  <div className="flex-1">
+                <div className="flex flex-wrap sm:flex-nowrap gap-2 pl-0 sm:pl-7">
+                  <div className="flex-1 min-w-[120px]">
                     <Label className="text-xs">Rate (₹)</Label>
                     <Input
                       type="number"
@@ -344,7 +344,7 @@ const CreateInvoice = () => {
                       onChange={(e) => updateLineItem(item.id, { rate: parseFloat(e.target.value) || 0 })}
                     />
                   </div>
-                  <div className="w-20">
+                  <div className="w-24">
                     <Label className="text-xs">Qty</Label>
                     <Input
                       type="number"
@@ -354,7 +354,8 @@ const CreateInvoice = () => {
                       onChange={(e) => updateLineItem(item.id, { quantity: parseFloat(e.target.value) || 1 })}
                     />
                   </div>
-                  <div className="w-28 text-right pt-5">
+                  <div className="w-full sm:w-28 text-right sm:pt-5 pt-2 flex justify-between sm:block border-t border-gray-100 sm:border-0 mt-2 sm:mt-0 items-center">
+                    <span className="text-xs text-muted-foreground sm:hidden font-medium">Amount</span>
                     <span className="text-sm font-medium">{formatINR(item.rate * item.quantity)}</span>
                   </div>
                 </div>

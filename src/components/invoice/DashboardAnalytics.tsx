@@ -107,23 +107,23 @@ export const DashboardAnalytics = ({ invoices }: DashboardAnalyticsProps) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
       {/* Monthly Revenue Chart */}
-      <Card className="lg:col-span-2 p-6 border-gray-200 shadow-sm bg-white/80 backdrop-blur-sm">
-        <div className="flex items-center justify-between mb-6">
+      <Card className="lg:col-span-2 p-4 sm:p-6 border-gray-200 shadow-sm bg-white/80 backdrop-blur-sm flex flex-col">
+        <div className="flex flex-wrap items-center justify-between mb-4 sm:mb-6 gap-2">
           <div className="flex items-center gap-2">
             <TrendingUp className="h-5 w-5 text-blue-600" />
-            <h3 className="text-lg font-semibold text-gray-900">Revenue Overview</h3>
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900">Revenue Overview</h3>
           </div>
           <span className="text-xs text-gray-500 font-medium px-2 py-1 bg-gray-100 rounded-md">Last 6 Months</span>
         </div>
-        <div className="h-[300px] w-full">
+        <div className="h-[250px] sm:h-[300px] w-full mt-auto text-xs sm:text-sm">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={analyticsData.monthlyData} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
+            <BarChart data={analyticsData.monthlyData} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-              <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: '#6b7280', fontSize: 12 }} dy={10} />
+              <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: '#6b7280' }} dy={10} />
               <YAxis 
                 axisLine={false} 
                 tickLine={false} 
-                tick={{ fill: '#6b7280', fontSize: 12 }}
+                tick={{ fill: '#6b7280' }}
                 tickFormatter={(value) => `₹${value >= 1000 ? (value/1000).toFixed(1) + 'k' : value}`}
                 dx={-10}
               />
@@ -132,9 +132,9 @@ export const DashboardAnalytics = ({ invoices }: DashboardAnalyticsProps) => {
                 contentStyle={{ borderRadius: '8px', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
                 formatter={(value: number) => formatINR(value)}
               />
-              <Legend wrapperStyle={{ paddingTop: '20px' }} />
-              <Bar dataKey="paid" name="Paid Revenue" fill="#10b981" radius={[4, 4, 0, 0]} maxBarSize={40} />
-              <Bar dataKey="unpaid" name="Pending Revenue" fill="#f59e0b" radius={[4, 4, 0, 0]} maxBarSize={40} />
+              <Legend wrapperStyle={{ paddingTop: '10px' }} />
+              <Bar dataKey="paid" name="Paid" fill="#10b981" radius={[4, 4, 0, 0]} maxBarSize={40} />
+              <Bar dataKey="unpaid" name="Pending" fill="#f59e0b" radius={[4, 4, 0, 0]} maxBarSize={40} />
             </BarChart>
           </ResponsiveContainer>
         </div>
